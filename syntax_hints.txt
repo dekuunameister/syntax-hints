@@ -1,0 +1,97 @@
+# IS THE VIRTUALENV GIVING YOU TROUBLE?
+rm -rf env # allows you to setup a clean environment
+brew install python3 # probably already there
+/usr/local/bin/python3 -m venv env
+
+# compile JS
+./node_modules/.bin/webpack
+
+# Add image in HTML where .ext is any extension used for pictures, and alt is alternative text to describe the picture:
+<img src=“picname.ext” alt=“text if picture can’t be generated” width=“#” height=“#”>
+
+# Check style with HTML5Validator: be in PROJECT_ROOT directory (aka the folder that contains everything in your project)
+$ html5validator -—root directoryname/
+
+# Check python style
+$ pylint —-reports=n setup.py insta485generator
+
+# Access local server 8000:
+$ python -m http.server 8000
+
+# python create folder that doesn't yet exist 
+import os
+
+if not os.path.exists(path):
+    os.makedirs(path)
+
+# (simplified explanation) in python, allow a function to pass in arguments that can change every time you call it.  
+function(**argument)
+
+# python create new file
+#if creating HTML file, make sure that string_object has HTML stuff in it!!
+string_object = “this can be anything” 
+f = open(‘filename.txt’, ‘w’) 
+message = string_object
+f.write(message)
+f.close()
+
+# chmod on mac
+chmod 777 path/pathy
+
+# Stupid anaconda won’t let me create a virtual environment
+conda create -n env_name
+source activate env_name
+
+# R modulus operator
+x %% y
+
+# search for an SQLite column where the column’s name is a variable
+cur.execute("SELECT * FROM list WHERE category=?", (var_name,))
+
+# setup the virtual environment
+python3 -m env env —-without-pip
+
+# javascript int to string
+let a = 12
+let a_s = ‘’ + a
+
+# git hard reset so you can pull if you know you really want to
+git reset --hard origin/master
+
+# write to a file in python
+file = open("whatever.txt", "w")
+file.write("Why do I still not know this?")
+file.write("I can write multiple lines")
+file.close()
+
+# undo git add
+git reset
+
+# python check if key exists in dictionary
+if key in dict:
+
+# python string to dictionary
+import ast
+
+dict_from_str = ast.literal_eval("{'x':1, 'y':2}")
+print(dict_from_str)
+
+# python get rid of newline after print
+print(thing, end='')
+
+# python line continuation
+a = '1' + '2' + '3' + \
+    '4' + '5'
+
+# R transpose (of matrix/vector mat)
+t(mat)
+
+# python string from chars
+''.join(list_of_chars)
+
+# python every other character
+some_string[m::n] # get every n indices starting from index m--this is called a "slice"
+
+# python activate shebang
+#!/usr/bin/python OR #!/usr/bin/python2
+chmod +x python_script_name.py
