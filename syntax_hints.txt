@@ -93,5 +93,5 @@ t(mat)
 some_string[m::n] # get every n indices starting from index m--this is called a "slice"
 
 # python activate shebang
-#!/usr/bin/python OR #!/usr/bin/python2
+#!/usr/bin/env python OR #!/usr/bin/env python2
 chmod +x python_script_name.py
